@@ -1,7 +1,11 @@
 package DarrenYau;
 
 public class HorseBarn {
-    private Horse[] spaces;
+    private Horses[] spaces;
+    public HorseBarn (Horses[] spaces) {
+        this.spaces = spaces;
+    }
+
     public int findHorseSpace(String name) {
         for (int i = 0; i < spaces.length; i++) {
             if (spaces[i].equals(name)) {
